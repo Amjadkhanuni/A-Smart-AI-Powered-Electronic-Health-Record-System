@@ -1,0 +1,4 @@
+question,generated,gold_answer,precision,recall,f1,bleu
+What abnormality is present in the right lung?,Pulmonary vascularity is increased,There is right upper lobe airspace disease.,0.249999999375,0.14285714265306124,0.18181818148760334,0.043120969391201254
+Is there any opacity seen?,There is cardiomegaly,Yes a rounded nodular opacity is seen in the left upper lung.,0.3333333322222222,0.08333333326388888,0.13333333315555554,0.006427482888174239
+Is the heart size normal?,The heart size is normal.,The cardiomediastinal silhouette is within normal limits.,0.3999999992,0.2857142853061225,0.3333333327777778,0.06703200460356394
