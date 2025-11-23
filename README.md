@@ -1,106 +1,23 @@
-# A-Smart-AI-Powered-Electronic-Health-Record-System
-Intelligent-EHRS is an advanced Electronic Health Record System designed to streamline healthcare workflows using AI-driven patient analysis, secure record management, and smart automation. It enables hospitals, clinics, and healthcare professionals to efficiently manage patient data, generate insights, and improve decision-making.
-🔥 Key Features
+# Intelligent EHR Question Answering using Semantic Similarity & RAG
 
-AI-powered health insights
-Automatically analyzes medical records, prescriptions, and symptoms to generate smart suggestions.
+## Project Overview
+This project implements a medical question-answering system using **Semantic Similarity** and **Retrieval-Augmented Generation (RAG)** on **Electronic Health Records (EHR)** data. The system intelligently combines **semantic embeddings** for retrieval and **T5-based generation** to provide accurate answers to medical queries.
 
-Smart Prescription Extraction
-Upload an image/text and the system extracts medicine names, dosage, and treatment details.
+### Key Features:
+- **EHR Dataset Retrieval**: Retrieves medical data from **Electronic Health Records**.
+- **External API Integration**: Uses **Google Search (SerpAPI)** and **Wikipedia** for answering medical questions when the dataset does not provide enough information.
+- **Medicine Recommendations**: Recommends relevant medicines based on the user's query.
+- **Nearest Store Locator**: Provides the nearest pharmacy or store that sells the recommended medicines.
 
-Patient Record Management
-Add, update, and manage complete patient profiles securely.
+## Folder Structure
+- **data/**: Contains raw and cleaned datasets.
+- **notebooks/**: Contains analysis notebooks.
+- **src/**: Source code files for preprocessing, embedding, retrieval, and generation.
+- **models/**: Trained models, embeddings, and indexes.
+- **app/**: Simple demo interface.
 
-Authentication System
-Secure login using Firebase Authentication.
-
-Cloud-based Database (Firestore)
-Store and sync health records in real-time.
-
-Responsive Web UI
-Built with a clean and user-friendly interface.
-
-🧠 Tech Stack
-Component	Technology
-Frontend	Streamlit
-Backend	Python
-Database	Firebase Firestore
-Auth	Firebase Authentication
-AI Logic	Gemini / ML models
-Hosting	Streamlit Cloud / Firebase Hosting
-📁 Project Structure
-Intelligent-EHRS-Project-master/
-│── app.py                  # Main Streamlit application
-│── pages/                  # Multi-page Streamlit setup
-│── models/                 # AI Models or processing files
-│── utils/                  # Helper functions
-│── firebase_config.json    # Firebase configuration
-│── requirements.txt        # Project dependencies
-│── README.md               # Project documentation
-
-🛠 Installation & Setup
-1. Clone the repository
-git clone https://github.com/your-username/Intelligent-EHRS.git
-cd Intelligent-EHRS
-
-2. Install dependencies
-pip install -r requirements.txt
-
-3. Add Firebase configuration
-
-Place your Firebase config file here:
-
-/firebase_config.json
-
-4. Run the app
-streamlit run app.py
-
-🌐 Deployment
-🚀 Deploy on Streamlit Cloud
-
-Push project to GitHub
-
-Go to https://streamlit.io/cloud
-
-Click New App
-
-Select:
-
-Repository name: Intelligent-EHRS
-
-Branch: main
-
-Main file: app.py
-
-Click Deploy
-
-Your link will look like:
-
-👉 https://share.streamlit.io/your-username/Intelligent-EHRS/main
-
-📦 Download the Project
-
-📎 Download Intelligent-EHRS-Project-master.zip
-
-🧪 Core Functionalities
-
-✔ Upload & process prescriptions
-✔ Generate smart medical suggestions
-✔ AI-based health recommendation engine
-✔ Secure patient management
-✔ Fully cloud-based database
-✔ User login & authentication
-
-🤝 Contributing
-
-Pull requests are welcome!
-If you have new ideas, improvements, or fixes, feel free to contribute.
-
-📜 License
-
-This project is licensed under the MIT License — free for personal and commercial use.
-
-👨‍⚕️ Author
-
-Amjad Khan
-AI Developer | Machine Learning Enthusiast
+## Setup Instructions
+1. **Create a virtual environment**:
+   ```bash
+   python -m venv venv
+   .\venv\Scripts\Activate.ps1  # For Windows

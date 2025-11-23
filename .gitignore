@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+venv/
+models/
+models/*
+*.ipynb_checkpoints
+app/logs/answers.log
